@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Survey Form</title>
+
+     <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+     <header>
+          <h1 id="title">Job Application Form</h1>
+          <p id="description">Do you want to work with us? please we are interested in people like you.</p>
+     </header>
+     <form action="index.html" method="get" id="survey-form">
+          <fieldset>
+               <legend>Personal Information</legend>
+               <label for="name" id="name-label">First Name : </label>
+               <input type="text" name="name" id="name" placeholder="Rodolfo Jr. Smith" required>
+               <label for="email" id="email-label">E-mail : </label>
+               <input type="email" name="user_email" id="email" placeholder="personal_email@domain.com"
+                    pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+               <label for="number" id="number-label">Phone : </label>
+               <input type="number" name="user_number" id="number" placeholder="5491187654321" min="10" max="13"
+                    pattern="[0-9]+">
+               <div>
+                    <p>Own mobility ? </p>
+                    <label>
+                         <input type="radio" name="mobility" id="mobility_no" value="0" checked>
+                         No</label>
+                    <label>
+                         <input type="radio" name="mobility" id="mobility_bike" value="1">
+                         Bike</label>
+                    <label>
+                         <input type="radio" name="mobility" id="mobility_car" value="2">
+                         Car</label>
+               </div>
+               <div>
+                    <p>Personal Interests ? </p>
+                    <label>
+                         <input type="checkbox" name="mobility" id="beach" value="0" checked>
+                         Beach</label>
+                    <label>
+                         <input type="checkbox" name="mobility" id="desert" value="1">
+                         Desert</label>
+                    <label>
+                         <input type="checkbox" name="mobility" id="montana" value="2">
+                         Montana</label>
+               </div>
+          </fieldset>
+          <fieldset>
+               <legend>Working Information</legend>
+               <label for="company_name">Company Name : </label>
+               <input type="text" name="company_name" id="company_name" placeholder="Company Name, C.A.">
+               <label for="job_title">Job Title : </label>
+               <input type="text" name="job_title" id="job_name" placeholder="Engineer">
+               <label for="dropdown">How do you feel in your current job title ? </label>
+               <select id="dropdown">
+                    <option value="0"></option>
+                    <option value="1">Very good</option>
+                    <option value="2">Good</option>
+                    <option value="3">Bad</option>
+                    <option value="4">Very bad</option>
+               </select>
+               <label for="comment">Comment : </label>
+               <textarea name="comment" id="comment"
+                    placeholder="If you have any comments, please write them here"></textarea>
+          </fieldset>
+          <button type="reset" id="reset">Reset</button>
+          <button type="submit" id="submit">Submit</button>
+     </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
