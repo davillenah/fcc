@@ -1,0 +1,114 @@
+/**
+ *  Mixin
+ */
+@mixin border-box {
+  box-sizing: border-box;
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+/**
+ *  Generic Styles
+ */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+}
+
+/**
+ * Hero
+ */
+
+header {
+  display: table;
+  width: 96vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+hgroup {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  & #title {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+  }
+
+  & h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}
+
+/**
+ * Image Style
+ */
+
+#img-div {
+  @include border-box();
+  background-image: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0),
+    white,
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 0;
+
+  & #image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  & #img-caption {
+    display: block;
+    margin: 2rem auto;
+    width: 70%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+#tribute-info {
+  @include border-box();
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style: none;
+  margin: 2rem auto;
+  width: 80%;
+  font-size: 0.9rem;
+
+  & .bold {
+    font-weight: 700;
+  }
+}
+
+footer {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 0.9rem;
+}
