@@ -8,11 +8,11 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 
 **User Story #1**: I can see a _main element_ with a corresponding `id="main-doc"`, which contains the page's main content (technical documentation).
 
-**User Story #2**: Within the `#main-doc` element, I can see several section elements, each with a class of _main-section_. There should be a minimum of 5.
+**User Story #2**: Within the `#main-doc` element, I can see several _section elements_, each with a `class="main-section"`. There should be a minimum of 5.
 
-**User Story #3**: The first element within each `.main-section` should be a _header element_ which contains text that describes the topic of that section.
+**User Story #3**: The _first element_ within each `.main-section` should be a _header element_ which contains text that describes the topic of that section.
 
-**User Story #4**: Each _section element_ with the class of _main-section_ should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding `id="JavaScript_and_Java"`).
+**User Story #4**: Each _section element_ with the `class="main-section"` should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding `id="JavaScript_and_Java"`).
 
 **User Story #5**: The `.main-section` elements should contain at least _10 p elements_ total (not each).
 
@@ -24,11 +24,11 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 
 **User Story #9**: The _navbar element_ should contain one _header element_ which contains text that describes the topic of the technical documentation.
 
-**User Story #10**: Additionally, the navbar should contain _link (a) elements_ with the class of _nav-link_. There should be one for every element with the class _main-section_.
+**User Story #10**: Additionally, the navbar should contain _link (a) elements_ with the `class="nav-link"`. There should be one for every element with the `#main-section`.
 
 **User Story #11**: The _header element_ in the navbar must come before any _link (a) elements_ in the navbar.
 
-**User Story #12**: Each element with the class of _nav-link_ should contain text that corresponds to the _header_ text within each _section_ (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+**User Story #12**: Each element with the `#nav-link` should contain text that corresponds to the _header_ text within each _section_ (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
 
 **User Story #13**: When I click on a _navbar element_, the page should navigate to the corresponding section of the _main-doc element_ (e.g. If I click on a _nav-link element_ that contains the text "Hello world", the page navigates to a _section element_ that has that id and contains the corresponding header.
 
