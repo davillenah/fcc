@@ -8,7 +8,7 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 
 **User Story #1**: My portfolio should have a _welcome section_ with an `id="welcome-section"`.
 
-**User Story #2**: The _welcome section_ should have an _h1 element_ that contains text.
+**User Story #2**: The `#welcome-section` should have an _h1 element_ that contains text.
 
 **User Story #3**: My portfolio should have a _projects section_ with an `id="projects"`.
 
