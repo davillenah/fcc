@@ -1,0 +1,26 @@
+@import "model-1";
+@import "model-2";
+/*! sadasdasdasdasdasdasd*/
+.nav-bar {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0;
+    width: 100%;
+    max-width: 100%;
+    &.--fixed-top {
+        position: fixed;
+        top: 0;
+    }
+    &.--fixed-bottom {
+        position: fixed;
+        bottom: 0;
+    }
+    @include model-1_menu;
+    @include model-2_menu;
+}
+.nav-bar_link {
+    box-sizing: inherit;
+    @include model-1_links;
+    @include model-2_links;
+}

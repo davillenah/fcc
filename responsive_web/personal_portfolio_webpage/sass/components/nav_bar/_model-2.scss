@@ -1,8 +1,8 @@
-@mixin model-1_menu {
+@mixin model-2_menu {
     /**
         *   NAVBAR - MENU
         */
-    &.--model-1 {
+    &.--model-2 {
         line-height: 2;
         @media (max-width: 599px) {
             font-size: 1.35em;
@@ -40,14 +40,14 @@
         }
     }
 }
-@mixin model-1_links {
+@mixin model-2_links {
     /**
         *   NAVBAR - LINKS
         */
-    &.--model-1 {
-        flex-basis: ((1 / 5) * 100%);
-        width: ((1 / 5) * 100%);
-        max-width: ((1 / 5) * 100%);
+    &.--model-2 {
+        flex-basis: ((1 / 4) * 100%);
+        width: ((1 / 4) * 100%);
+        max-width: ((1 / 4) * 100%);
         transition: all 1s;
         span {
             visibility: hidden;
