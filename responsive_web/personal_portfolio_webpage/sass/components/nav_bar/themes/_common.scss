@@ -1,0 +1,38 @@
+@mixin common_menu--themes {
+    .light &.--color {
+        &-1 {
+            background-color: rgba(#011627, 0.5);
+            box-shadow: 0 0 0.3em 0.3em rgba(#011627, 0.5);
+        }
+    }
+    .dark &.--color {
+        &-1 {
+            background-color: rgba(#fdfffc, 0.3);
+            box-shadow: 0 0 0.3em 0.3em rgba(#fdfffc, 0.3);
+        }
+    }
+}
+@mixin common_links--themes {
+    .light &.--color {
+        &-1 {
+            color: #34e9d7;
+            &:hover {
+                color: #fdab38;
+            }
+            span {
+                color: #34e9d7;
+            }
+        }
+    }
+    .dark &.--color {
+        &-1 {
+            color: #fdfffc;
+            &:hover {
+                color: #e71d36;
+            }
+            span {
+                color: #fdfffc;
+            }
+        }
+    }
+}

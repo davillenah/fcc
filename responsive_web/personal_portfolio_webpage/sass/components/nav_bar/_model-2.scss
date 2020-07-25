@@ -3,41 +3,27 @@
         *   NAVBAR - MENU
         */
     &.--model-2 {
-        line-height: 2;
+        line-height: 3;
         @media (max-width: 599px) {
-            font-size: 1.35em;
-            span {
-                display: none;
-            }
+            font-size: 1em;
+            line-height: 4;
         }
         @media (max-width: 350px) {
-            font-size: 1.2em;
+            font-size: 0.9em;
         }
         @media (min-width: 600px) {
-            font-size: 1.5em;
+            font-size: 1.15em;
         }
         @media (min-width: 900px) {
-            font-size: 1.6em;
+            font-size: 1.3em;
         }
         @media (min-width: 1200px) {
-            font-size: 1.7em;
+            font-size: 1.4em;
         }
         @media (min-width: 1800px) {
-            font-size: 2em;
+            font-size: 1.7em;
         }
         text-align: center;
-    }
-    .light &.--color {
-        &-1 {
-            background-color: rgba(#011627, 0.5);
-            box-shadow: 0 0 0.3em 0.3em rgba(#011627, 0.5);
-        }
-    }
-    .dark &.--color {
-        &-1 {
-            background-color: rgba(#fdfffc, 0.3);
-            box-shadow: 0 0 0.3em 0.3em rgba(#fdfffc, 0.3);
-        }
     }
 }
 @mixin model-2_links {
@@ -48,6 +34,17 @@
         flex-basis: ((1 / 4) * 100%);
         width: ((1 / 4) * 100%);
         max-width: ((1 / 4) * 100%);
+        @media (max-width: 599px) {
+            flex-basis: 100%;
+            width: 100%;
+            max-width: 100%;
+            &:first-of-type {
+                margin-top: 1.5em;
+            }
+            &:last-of-type {
+                margin-bottom: 1.4em;
+            }
+        }
         transition: all 1s;
         span {
             visibility: hidden;
@@ -59,25 +56,22 @@
             }
         }
     }
-    .light &.--color {
-        &-1 {
-            color: #34e9d7;
-            &:hover {
-                color: #fdab38;
+    &.--img {
+        position: relative;
+        img {
+            position: absolute;
+            top: calc(100% - 3em);
+            right: 0;
+            height: 3em;
+            @media (max-width: 599px) {
+                position: static;
+                height: 5em;
             }
-            span {
-                color: #34e9d7;
+            @media (min-width: 1200px) {
+                right: 20%;
             }
-        }
-    }
-    .dark &.--color {
-        &-1 {
-            color: #fdfffc;
-            &:hover {
-                color: #e71d36;
-            }
-            span {
-                color: #fdfffc;
+            @media (min-width: 1800px) {
+                right: 30%;
             }
         }
     }
