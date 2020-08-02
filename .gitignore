@@ -83,7 +83,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+#dist
 
 # Gatsby files
 .cache/
@@ -118,7 +118,8 @@ dist
 
 ##### SASS
 .sass-cache/
-*.css
+build/
+master.css
 *.css.map
 *.sass.map
 *.scss.map

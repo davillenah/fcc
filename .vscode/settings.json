@@ -1,0 +1,44 @@
+{
+  "workbench.colorTheme": "Monokai",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 1.15,
+  "editor.fontFamily": "'PT Mono', monospace;",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "terminal.integrated.fontFamily": "monospace",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.generate-minified-css": true,
+  "compile-hero.generate-minified-html": true,
+  "compile-hero.generate-minified-javascript": true,
+  "bracketPairColorizer.colorMode": "Independent",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": ["> 5%", "last 5 versions"],
+  "liveSassCompile.settings.formats": [
+    // Default.
+    {
+      "format": "nested",
+      "extensionName": ".css",
+      "savePath": null
+    },
+    // Build
+    {
+      "format": "compact",
+      "extensionName": ".css",
+      "savePath": "/build/css"
+    },
+    // Dist
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/css"
+    }
+  ]
+}
