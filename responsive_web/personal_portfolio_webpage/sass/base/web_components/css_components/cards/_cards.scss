@@ -1,0 +1,15 @@
+@import "models/model-1";
+/**
+    *   CARD DESIGN
+    */
+.card {
+    position: relative;
+    height: 20em;
+    width: 20em;
+    border-radius: 1em;
+    font-size: 0.75em;
+    color: #fff;
+    text-shadow: 1.5rem 1.5rem 1rem rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0.5em 0.1em white;
+}
+@include model-1;

@@ -1,0 +1,21 @@
+/**
+    *   COLORS PALLETE
+    */
+$pallete-dark: #011627;
+$pallete-light: #fdfffc;
+$pallete-primary: #34e9d7;
+$pallete-secondary: #fdab38;
+$pallete-tertiary: #e71d36;
+
+.color--primary {
+    color: $pallete-primary;
+}
+.color--secondary {
+    color: $pallete-secondary;
+}
+.color--tertiary {
+    color: $pallete-tertiary;
+}
+.color--red {
+    color: red;
+}

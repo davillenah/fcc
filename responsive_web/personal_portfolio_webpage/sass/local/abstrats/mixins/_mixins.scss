@@ -1,0 +1,97 @@
+@import "order-structure";
+
+@mixin test($color: salmon) {
+    & * {
+        outline: 1px solid $color;
+    }
+}
+.test * {
+    outline: 1px solid salmon;
+}
+
+@mixin container($width: 100%, $display: block) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    @if ($display == block) {
+        display: block;
+    }
+    @if ($display == flex) {
+        display: $display;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: $width;
+    }
+    width: $width;
+    max-width: 100%;
+}
+@mixin out-container($margin) {
+    margin-left: -($margin/2);
+    margin-right: -($margin/2);
+}
+@mixin row($width: 100%, $display: flex) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @if ($display == block) {
+        display: block;
+    }
+    @if ($display == flex) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: $width;
+    }
+    width: $width;
+    max-width: $width;
+}
+@function grid-column-generator($col, $grid) {
+    @return ($col/$grid);
+}
+@mixin col($col: 12, $grid: 12, $col-gap: 0) {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-basis: (grid-column-generator($col, $grid) * 100%);
+    width: (grid-column-generator($col, $grid) * 100%);
+    max-width: (grid-column-generator($col, $grid) * 100%);
+    @if ($col-gap != 0) {
+        margin-left: $col-gap;
+    }
+}
+@mixin offset($col: 12, $grid: 12) {
+    margin-left: (grid-column-generator($col, $grid) * 100%);
+}
+@mixin col-pos($position, $distribution) {
+    $x: (
+        //  V
+            "top": flex-start,
+        "middle": center,
+        "bottom": flex-end,
+        "expanded": stretch,
+        "baseline": baseline,
+        //  H
+            "left": flex-start,
+        "center": center,
+        "right": flex-end,
+        "between": space-between,
+        "around": space-around,
+        "evenly": space-evenly
+    );
+    @if ($position == row) {
+        justify-content: map-get($x, $distribution);
+    }
+    @if ($position == content) {
+        align-content: map-get($x, $distribution);
+    }
+    @if ($position == items) {
+        align-items: map-get($x, $distribution);
+    }
+    @if ($position == self) {
+        align-self: map-get($x, $distribution);
+    }
+}

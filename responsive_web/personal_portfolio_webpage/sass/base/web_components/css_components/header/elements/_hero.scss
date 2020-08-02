@@ -1,0 +1,46 @@
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    @media (max-width: 599px) {
+        background-image: $hero-4;
+        background-position: top center;
+        background-size: 560rem;
+    }
+    @media (max-width: 350px) {
+        background-position: 50% 8%;
+        background-size: 400rem;
+    }
+    @media (min-width: 600px) {
+        background-image: $hero-4;
+        background-position: center 0;
+        background-size: 560rem;
+    }
+    @media (min-width: 900px) {
+        background-image: $hero-1;
+        background-position: left;
+    }
+    @media (min-width: 1200px) {
+        background-image: $hero-2;
+    }
+    @media (min-width: 1800px) {
+        background-image: $hero-3;
+        background-position: 80rem center;
+        background-size: 480rem;
+    }
+    button {
+        display: block;
+        height: 50rem;
+        width: 50rem;
+        border: none;
+        position: fixed;
+        top: 10rem;
+        right: 10rem;
+        font-size: 1.8em;
+        @media (min-width: 600px) {
+            display: none;
+        }
+    }
+}

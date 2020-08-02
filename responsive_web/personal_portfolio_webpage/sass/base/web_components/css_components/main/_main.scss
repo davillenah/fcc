@@ -1,0 +1,10 @@
+/**
+    *   MAIN
+    */
+@import "themes/common";
+
+@import "models/model-1";
+
+@include common--themes;
+
+@include model-1_body;

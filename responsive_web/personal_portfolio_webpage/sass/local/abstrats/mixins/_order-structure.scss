@@ -1,0 +1,24 @@
+@mixin structure-1--POSITION {
+    @content;
+}
+@mixin structure-2--LAYOUT {
+    @content;
+}
+@mixin structure-3--BOX-MODEL {
+    @content;
+}
+@mixin structure-4--FONTS {
+    @content;
+}
+@mixin structure-5--TEXT {
+    @content;
+}
+@mixin structure-6--CUSTOM {
+    @content;
+}
+@mixin structure-7--ANIMATION {
+    @content;
+}
+@mixin structure-8--OTHERS {
+    @content;
+}

@@ -1,0 +1,36 @@
+@mixin model-1_body {
+    /**
+        *   MAIN - BODY
+        */
+    [class*="layout --model-1"] {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 0 auto;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        & > * {
+            flex-basis: 50%;
+            width: 50%;
+            max-width: 50%;
+            @media (max-width: 599px) {
+                flex-basis: 100%;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        & > :nth-child(2) ~ * {
+            display: none !important;
+        }
+        & > .--left-side {
+            order: 0;
+            height: 100vh;
+            max-height: 100vh;
+        }
+        & > .--right-side {
+            order: 1;
+            min-height: 100vh;
+        }
+    }
+}

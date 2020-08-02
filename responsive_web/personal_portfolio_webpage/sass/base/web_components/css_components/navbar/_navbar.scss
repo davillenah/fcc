@@ -1,10 +1,11 @@
 /**
-    *   NAVBAR - v1.0.0
+    *   NAVBAR
     */
-@import "model-1";
-@import "model-2";
-
 @import "themes/common";
+
+@import "models/model-1";
+@import "models/model-2";
+
 .nav-bar {
     box-sizing: border-box;
     display: flex;
@@ -23,13 +24,17 @@
         position: fixed;
         bottom: 0;
     }
+
+    @include common_menu--themes;
+
     @include model-1_menu;
     @include model-2_menu;
-    @include common_menu--themes;
 }
 .nav-bar_link {
     box-sizing: inherit;
+
+    @include common_links--themes;
+
     @include model-1_links;
     @include model-2_links;
-    @include common_links--themes;
 }

@@ -1,0 +1,12 @@
+/**
+    *   FONTS
+    */
+$font-primary: "Fondamento", cursive;
+$font-secondary: "Anonymous Pro", monospace;
+
+.font--primary {
+    font-family: $font-primary;
+}
+.font--secondary {
+    font-family: $font-secondary;
+}

@@ -1,0 +1,39 @@
+[class*="hero --model-1"] > .title {
+    position: absolute;
+    right: 10%;
+    text-align: right;
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 0.6em;
+        margin: 0;
+    }
+    @media (max-width: 599px) {
+        bottom: 10%;
+        font-size: 1.4em;
+    }
+    @media (max-width: 350px) {
+        bottom: 20%;
+        font-size: 1.2em;
+    }
+    @media (min-width: 600px) {
+        bottom: 10%;
+        font-size: 1.8em;
+    }
+    @media (min-width: 900px) {
+        bottom: 15%;
+        font-size: 2em;
+    }
+    @media (min-width: 1200px) {
+        bottom: 12.5%;
+        font-size: 2.2em;
+        h1 {
+            margin-bottom: 0em;
+        }
+    }
+    @media (min-width: 1800px) {
+        bottom: 10%;
+        font-size: 3em;
+    }
+}

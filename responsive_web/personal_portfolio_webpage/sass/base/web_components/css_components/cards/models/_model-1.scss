@@ -1,0 +1,31 @@
+@mixin model-1 {
+    [class*="card --model-1"] {
+        height: 25em;
+        & > .card__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25em;
+            width: 20em;
+            border-radius: 1em;
+        }
+        & > .card__header {
+            position: absolute;
+            z-index: 1;
+            bottom: 0em;
+            height: 7em;
+            width: 100%;
+            transition: all 1s;
+        }
+        &:hover {
+            box-shadow: -3.5rem 3.5rem 0.5em 0.1em rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            & > .card__header {
+                height: 15em;
+                border-bottom-left-radius: 1em;
+                border-bottom-right-radius: 1em;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}

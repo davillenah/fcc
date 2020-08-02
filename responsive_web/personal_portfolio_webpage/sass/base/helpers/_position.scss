@@ -1,0 +1,67 @@
+/**
+    *   POSITION - HELPERS
+    */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+}
+[class*="relative --top"],
+[class*="absolute --top"],
+[class*="fixed --top"],
+[class*="sticky --top"] {
+    top: 0;
+}
+[class*="relative --right"],
+[class*="absolute --right"],
+[class*="fixed --right"],
+[class*="sticky --right"] {
+    right: 0;
+}
+[class*="relative --bottom"],
+[class*="absolute --bottom"],
+[class*="fixed --bottom"],
+[class*="sticky --bottom"] {
+    bottom: 0;
+}
+[class*="relative --left"],
+[class*="absolute --left"],
+[class*="fixed --left"],
+[class*="sticky --left"] {
+    left: 0;
+}
+[class*="relative --top --left"],
+[class*="absolute --top --left"],
+[class*="fixed --top --left"],
+[class*="sticky --top --left"] {
+    top: 0;
+    left: 0;
+}
+[class*="relative --top --right"],
+[class*="absolute --top --right"],
+[class*="fixed --top --right"],
+[class*="sticky --top --right"] {
+    top: 0;
+    right: 0;
+}
+[class*="relative --bottom --left"],
+[class*="absolute --bottom --left"],
+[class*="fixed --bottom --left"],
+[class*="sticky --bottom --left"] {
+    bottom: 0;
+    left: 0;
+}
+[class*="relative --bottom --right"],
+[class*="absolute --bottom --right"],
+[class*="fixed --bottom --right"],
+[class*="sticky --bottom --right"] {
+    bottom: 0;
+    right: 0;
+}

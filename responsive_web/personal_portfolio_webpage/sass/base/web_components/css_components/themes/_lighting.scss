@@ -1,0 +1,9 @@
+/**
+    *   LIGHTING THEMES
+    */
+.light {
+    &.--color-1 {
+        color: $pallete-primary;
+        background-color: $pallete-light;
+    }
+}

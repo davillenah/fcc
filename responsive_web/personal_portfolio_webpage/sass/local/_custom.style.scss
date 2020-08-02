@@ -1,0 +1,43 @@
+* {
+    font-size: $font-secondary;
+}
+.about-box {
+    position: relative;
+    top: calc(50vh - 200rem);
+    left: calc(50% - 150rem);
+    height: 400rem;
+    width: 300rem;
+}
+.about-box > .img {
+    position: absolute;
+    top: 5%;
+    left: calc(25%);
+    display: block;
+    height: 37%;
+    width: 49.33%;
+    border: 2rem solid white;
+    border-radius: 50%;
+}
+.about-box > .title {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    display: block;
+    width: 100%;
+    font-size: 1.4em;
+    line-height: 50rem;
+    text-align: center;
+}
+.about-box > .description {
+    box-sizing: border-box;
+    position: absolute;
+    top: 54.5%;
+    left: 0;
+    display: block;
+    padding: 1em;
+    height: 45.5%;
+    width: 100%;
+    font-style: 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+}

@@ -1,0 +1,27 @@
+/**
+    *   DARKNESS THEMES
+    */
+.dark {
+    /**
+        *   BLACK
+        */
+    &.--color-1-1 {
+        color: $pallete-light;
+        background-color: #000;
+    }
+    /**
+        *   BLUE DARKNESS
+        */
+    &.--color-2-1 {
+        color: $pallete-light;
+        background-color: #264653;
+    }
+    &.--color-2-2 {
+        color: $pallete-light;
+        background-color: #011627;
+    }
+    &.--color-2-3 {
+        color: $pallete-light;
+        background-color: #030e18;
+    }
+}
