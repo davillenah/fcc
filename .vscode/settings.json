@@ -2,15 +2,8 @@
   "workbench.colorTheme": "Monokai",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "window.zoomLevel": 1.15,
+  "window.zoomLevel": 0,
   "editor.fontFamily": "'PT Mono', monospace;",
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "terminal.integrated.fontFamily": "monospace",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.formatOnSave": true,
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "compile-hero.generate-minified-css": true,
@@ -19,26 +12,76 @@
   "bracketPairColorizer.colorMode": "Independent",
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
+  "editor.minimap.enabled": false,
+  //  DART
+  "debug.openDebug": "openOnDebugBreak",
+  "dart.openDevTools": "flutter",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.fontFamily": "monospace",
+  //  SASS
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.autoprefix": ["> 5%", "last 5 versions"],
   "liveSassCompile.settings.formats": [
-    // Default.
+    // CSS - BUILD
     {
-      "format": "nested",
-      "extensionName": ".css",
-      "savePath": null
-    },
-    // Build
-    {
-      "format": "compact",
+      "format": "expanded",
       "extensionName": ".css",
       "savePath": "/build/css"
     },
-    // Dist
+    // CSS - DIST
     {
       "format": "compressed",
       "extensionName": ".min.css",
       "savePath": "/dist/css"
     }
-  ]
+  ],
+  //  PUG
+  "livePugCompiler.savePath": "/dist/html",
+  //  HTML
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  //  JAVASCRIPT
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //  DART
+  "[dart]": {
+    // Automatically format code on save and during typing of certain characters
+    // (like `;` and `}`).
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+
+    // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+    "editor.rulers": [80],
+
+    // Disables built-in highlighting of words that match your selection. Without
+    // this, all instances of the selected text will be highlighted, interfering
+    // with Dart's ability to highlight only exact references to the selected variable.
+    "editor.selectionHighlight": false,
+
+    // By default, VS Code prevents code completion from popping open when in
+    // "snippet mode" (editing placeholders in inserted code). Setting this option
+    // to `false` stops that and allows completion to open as normal, as if you
+    // weren't in a snippet placeholder.
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+    // By default, VS Code will pre-select the most recently used item from code
+    // completion. This is usually not the most relevant item.
+    //
+    // "first" will always select top item
+    // "recentlyUsedByPrefix" will filter the recently used items based on the
+    //     text immediately preceeding where completion was invoked.
+    "editor.suggestSelection": "first",
+
+    // Allows pressing <TAB> to complete snippets such as `for` even when the
+    // completion list is not visible.
+    "editor.tabCompletion": "onlySnippets",
+
+    // By default, VS Code will populate code completion with words found in the
+    // current file when a language service does not provide its own completions.
+    // This results in code completion suggesting words when editing comments and
+    // strings. This setting will prevent that.
+    "editor.wordBasedSuggestions": false
+  }
 }
