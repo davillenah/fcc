@@ -1,67 +1,67 @@
 /**
     *   POSITION - HELPERS
     */
-.relative {
+[class*="u-relative"] {
     position: relative;
 }
-.absolute {
+[class*="u-absolute"] {
     position: absolute;
 }
-.fixed {
+[class*="u-fixed"] {
     position: fixed;
 }
-.sticky {
+[class*="u-sticky"] {
     position: sticky;
 }
-[class*="relative --top"],
-[class*="absolute --top"],
-[class*="fixed --top"],
-[class*="sticky --top"] {
+.u-relative--top,
+.u-absolute--top,
+.u-fixed--top,
+.u-sticky--top {
     top: 0;
 }
-[class*="relative --right"],
-[class*="absolute --right"],
-[class*="fixed --right"],
-[class*="sticky --right"] {
+.u-relative--right,
+.u-absolute--right,
+.u-fixed--right,
+.u-sticky--right {
     right: 0;
 }
-[class*="relative --bottom"],
-[class*="absolute --bottom"],
-[class*="fixed --bottom"],
-[class*="sticky --bottom"] {
+.u-relative--bottom,
+.u-absolute--bottom,
+.u-fixed--bottom,
+.u-sticky--bottom {
     bottom: 0;
 }
-[class*="relative --left"],
-[class*="absolute --left"],
-[class*="fixed --left"],
-[class*="sticky --left"] {
+.u-relative--left,
+.u-absolute--left,
+.u-fixed--left,
+.u-sticky--left {
     left: 0;
 }
-[class*="relative --top --left"],
-[class*="absolute --top --left"],
-[class*="fixed --top --left"],
-[class*="sticky --top --left"] {
+.u-relative--top-left,
+.u-absolute--top-left,
+.u-fixed--top-left,
+.u-sticky--top-left {
     top: 0;
     left: 0;
 }
-[class*="relative --top --right"],
-[class*="absolute --top --right"],
-[class*="fixed --top --right"],
-[class*="sticky --top --right"] {
+.u-relative--top-right,
+.u-absolute--top-right,
+.u-fixed--top-right,
+.u-sticky--top--ight {
     top: 0;
     right: 0;
 }
-[class*="relative --bottom --left"],
-[class*="absolute --bottom --left"],
-[class*="fixed --bottom --left"],
-[class*="sticky --bottom --left"] {
+.u-relative--bottom-left,
+.u-absolute--bottom-left,
+.u-fixed--bottom-left,
+.u-sticky--bottom-left {
     bottom: 0;
     left: 0;
 }
-[class*="relative --bottom --right"],
-[class*="absolute --bottom --right"],
-[class*="fixed --bottom --right"],
-[class*="sticky --bottom --right"] {
+.u-relative--bottom-right,
+.u-absolute--bottom-right,
+.u-fixed--bottom-right,
+.u-sticky--bottom-right {
     bottom: 0;
     right: 0;
 }

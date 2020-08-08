@@ -1,34 +1,65 @@
 /**
     *   BOX SIZES - HELPERS
     */
-.full {
-    &-screen {
-        height: 100vh;
-        width: 100vw;
+.u-margin {
+    &--height-2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-    &-height-of-the-screen {
-        height: 100vh;
+    &--width-2 {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-    &-width-of-the-screen {
-        width: 100vw;
+    &--top-2 {
+        margin-top: 2rem;
     }
-    &-page {
-        height: 100%;
-        width: 100%;
+    &--bottom-2 {
+        margin-bottom: 2rem;
     }
-    &-height {
-        height: 100%;
+    &--left-2 {
+        margin-left: 2rem;
     }
-    &-width {
-        width: 100%;
+    &--right-2 {
+        margin-right: 2rem;
     }
 }
-.m {
-    &h30 {
-        margin-top: 30rem;
-        margin-bottom: 30rem;
+.u-height {
+    &-min-screen {
+        min-height: 100vh;
     }
-    &b30 {
-        margin-bottom: 30rem;
+    &-full-screen {
+        height: 100vh;
+    }
+    &-max-screen {
+        max-height: 100vh;
+    }
+    &-min-block {
+        min-height: 100%;
+    }
+    &-full-block {
+        height: 100%;
+    }
+    &-max-block {
+        max-height: 100%;
+    }
+}
+.u-width {
+    &-min-screen {
+        min-width: 100vw;
+    }
+    &-full-screen {
+        width: 100vw;
+    }
+    &-max-screen {
+        max-width: 100vw;
+    }
+    &-min-block {
+        min-width: 100%;
+    }
+    &-full-block {
+        width: 100%;
+    }
+    &-max-block {
+        max-width: 100%;
     }
 }

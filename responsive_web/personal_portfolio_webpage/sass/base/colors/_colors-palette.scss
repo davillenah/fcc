@@ -3,10 +3,18 @@
     */
 $pallete-dark: #011627;
 $pallete-light: #fdfffc;
-$pallete-primary: #34e9d7;
-$pallete-secondary: #fdab38;
-$pallete-tertiary: #e71d36;
+$pallete-primary: #165d95;
+$pallete-secondary: #e71d36;
+$pallete-tertiary: #1c9cd9;
+$pallete-fourth: #fdab38;
+$pallete-fifth: #34e9d7;
 
+.color--dark {
+    color: $pallete-dark;
+}
+.color--light {
+    color: $pallete-light;
+}
 .color--primary {
     color: $pallete-primary;
 }
@@ -15,6 +23,15 @@ $pallete-tertiary: #e71d36;
 }
 .color--tertiary {
     color: $pallete-tertiary;
+}
+.color--fourth {
+    color: $pallete-fourth;
+}
+.color--fifth {
+    color: $pallete-fifth;
+}
+.color--black {
+    color: $pallete-dark;
 }
 .color--red {
     color: red;
