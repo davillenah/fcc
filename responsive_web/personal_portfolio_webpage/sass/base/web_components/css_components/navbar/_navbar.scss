@@ -1,40 +1,53 @@
 /**
     *   NAVBAR
     */
-@import "themes/common";
-
-@import "models/model-1";
-@import "models/model-2";
-
-.nav-bar {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0;
-    width: 100%;
-    max-width: 100%;
-    &.--hidden {
-        display: none;
+.navbar {
+    height: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pallete-primary;
+    background-color: rgba(#fff, 0.3);
+    @media (max-width: 599px) {
+        height: auto;
+        padding-top: 2rem;
     }
-    &.--fixed-top {
-        position: fixed;
-        top: 0;
+    @media (min-width: 600px) {
+        font-size: 0.9em;
     }
-    &.--fixed-bottom {
-        position: fixed;
-        bottom: 0;
+    @media (min-width: 900px) {
+        font-size: 1.13em;
     }
-
-    @include common_menu--themes;
-
-    @include model-1_menu;
-    @include model-2_menu;
-}
-.nav-bar_link {
-    box-sizing: inherit;
-
-    @include common_links--themes;
-
-    @include model-1_links;
-    @include model-2_links;
+    &__item {
+        line-height: 4rem;
+        text-shadow: 0.1em 0.1em 0.08em rgb(15, 15, 15);
+        @media (max-width: 599px) {
+            line-height: 1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            &:last-of-type {
+                padding-bottom: 2rem;
+            }
+        }
+        & > img {
+            max-height: 3rem;
+            @media (max-width: 599px) {
+                max-height: 5rem;
+            }
+            @media (min-width: 900px) {
+                max-height: 4rem;
+            }
+        }
+        & span {
+            visibility: hidden;
+            color: $pallete-secondary;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $pallete-tertiary;
+            & span {
+                visibility: visible;
+            }
+        }
+    }
 }

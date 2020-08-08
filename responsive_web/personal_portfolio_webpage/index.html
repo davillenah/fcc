@@ -1,66 +1,234 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 
-  <head>
+<!--HEAD-->
+
+<head>
     <!--METADATA-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0 minimum-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width initial-scale=1.0 minimum-scale=1.0 maximum-scale=1.0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Daniel A. Villena H.">
-    <title>Personal Portfolio Webpage</title>
+    <title>D A V H</title>
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-          integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous">
-     <!--GOOGLE FONTS-->
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous">
+    <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <!--MAIN STYLE-->
-    <link rel="stylesheet" href="main.css">
     <!--TEST-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async></script>
-  </head>
+    <!--MAIN STYLE-->
+    <link rel="stylesheet" href="build/css/master.css">
+</head>
 
-  <body id="index">
-    <header id="welcome-section" class="header">
-    </header>
+<body class="light --color-1-1">
+    <div class="container">
+        <!--HEADER-->
+        <header id="welcome-section" class="hero--model-1 u-height-full-screen not-container">
+            <button class="btn__burger--model-1 u-fixed--top-right index-4 sm-hidden-on"><i
+                    class="fas fa-bars"></i></button>
+            <hgroup class="hero__title">
+                <h1 class="font--primary color--tertiary">Daniel A. Villena H.</h1>
+                <h2 class="color--fourth">Ingeniero Electrónico - Sr.
+                    </br>Full Stack - Trainee.</h2>
+            </hgroup>
+            <nav id="navbar" class="navbar row u-width-full-screen u-fixed--top index-3 all-text--center">
+                <a href="#" class="navbar__item col-xs-12 col-sm-3 row all-x-axis--center all-y-axis-self--middle"><img
+                        src="./assets/img/logo.png" alt="Logo"></a>
+                <a href="#"
+                    class="navbar__item col-xs-12 col-sm col-sm-offset-2 col-md-offset-3 col-lg-offset-4"><span>&#60;&nbsp;&nbsp;</span>Perfil<span>&nbsp;&#47;&#62;</span></a>
+                <a href="#"
+                    class="navbar__item col-xs-12 col-sm"><span>&#60;&nbsp;&nbsp;</span>Portofolio<span>&nbsp;&#47;&#62;</span></a>
+                <a href="#"
+                    class="navbar__item col-xs-12 col-sm"><span>&#60;&nbsp;&nbsp;</span>Contacto<span>&nbsp;&#47;&#62;</span></a>
+            </nav>
+        </header>
+        <!--MAIN-->
+        <main id="main" class="row u-relative all-hidden--on">
+            <!--ABOUT-->
+            <section id="about" class="about col-xs-12 col-all-6
+                row all-x-axis--center all-y-axis-content--middle u-sticky --top --left u-height-max-screen">
+                <div class="about-box">
+                    <img class="img" src="assets/img/selfie.jpg" alt="Selfie">
+                    <h2 class="title font--primary color--primary">Daniel A. Villena H.</h2>
+                    <p class="description">Como Ingeniero, he sumado experiencia en cuanto al liderazgo y manejo
+                        del personal, así como también en la optimizacion de Sistemas <span
+                            style="display: inline-block; text-align: center; width: 100%;">Electrónicos.</span></p>
+                </div>
+            </section>
+            <!--PROJECT-->
+            <section id="projects"
+                class="projects col-xs-12 col-all-6 col all-x-axis--center all-y-axis-content--evenly u-height-min-screen">
+                <h2 class="project-tile">Projects</h2>
+                <!--CARD : RICHARD E. MORLEY-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Richard E. Morley</h3>
+                                <h4>Tribute Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://themcaa.org/wp-content/uploads/dickmorley-1.jpg"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/OJMWqQJ"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+                <!--CARD : SURVEY FORM-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Survey Form</h3>
+                                <h4>Practice Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://ffteologica.org/Media/cgaofhyt/form1.png"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/qBbmZOE"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+                <!--CARD : SURVEY FORM-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Survey Form</h3>
+                                <h4>Practice Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://ffteologica.org/Media/cgaofhyt/form1.png"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/qBbmZOE"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+                <!--CARD : SURVEY FORM-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Survey Form</h3>
+                                <h4>Practice Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://ffteologica.org/Media/cgaofhyt/form1.png"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/qBbmZOE"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+                <!--CARD : SURVEY FORM-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Survey Form</h3>
+                                <h4>Practice Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://ffteologica.org/Media/cgaofhyt/form1.png"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/qBbmZOE"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+                <!--CARD : SURVEY FORM-->
+                <article class="card --model-1">
+                    <header class="card__header">
+                        <div class="card__title row all-text--center">
+                            <hgroup class="col-all-12">
+                                <h3>Survey Form</h3>
+                                <h4>Practice Page</h4>
+                            </hgroup>
+                            <hr class="col-all-12">
+                            <p class="col-all-12">1.932 - 2.017</p>
+                        </div>
+                    </header>
+                    <img class="card__img" src="https://ffteologica.org/Media/cgaofhyt/form1.png"
+                        alt="Richard E. Morley">
+                    <p>Diseno de pagina web, para la plataforma de <a href="https://codepen.io/IngVillena/full/qBbmZOE"
+                            target="_blank"><abbr title="FreeCodeCamp">FCC</abbr></a>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <!--CONTACT-->
+        <section id="contact" class="row all-x-axis--center all-hidden--on">
+            <h2>Contactame y Trabajemos Juntos</h2>
+            <p>Hablemos de algun proyecto...<br>Te invito un cafe.</p>
+            <div class="col-all-4 row all-x-axis--center all-y-axis-content--middle contact--left-side">
+                <img src="assets/img/logo.png" alt="Logo corporativo">
+            </div>
+            <form class="col-all-4 row all-x-axis--center contact__form contact--right-side" action="#" method="get">
+                <div class="col-all-11 contact__item">
+                    <input class=" contact__input col-all-12" type="text" name="corp" id="corp"
+                        placeholder="Empresa en la cual Trabaja:">
+                    <label class="contact__label col-all-12" for="corp">Empresa en la cual
+                        Trabaja:&nbsp;&nbsp;</label>
+                </div>
+                <div class="col-all-11 contact__item">
+                    <input class=" contact__input col-all-12" type="text" name="user" id="user"
+                        placeholder="Nombre y Apellido: *">
+                    <label class="contact__label col-all-12" for="user">Nombre y
+                        Apellido:&nbsp;<span class="color--red">*&nbsp;&nbsp;</span></label>
+                </div>
+                <div class="col-all-11 contact__item">
+                    <input class=" contact__input col-all-12" type="text" name="subject" id="subject"
+                        placeholder="Asunto del Mensaje: *">
+                    <label class="contact__label col-all-12" for="subject">Asunto del
+                        Mensaje:&nbsp;<span class="color--red">*&nbsp;&nbsp;</span></label>
+                </div>
+                <div class="col-all-11 contact__item">
+                    <textarea class=" contact__input col-all-12" name="msg" id="msg"
+                        placeholder="Mensaje: *"></textarea>
+                    <label class="contact__label col-all-12" for="msg">Mensaje:&nbsp;<span
+                            class="color--red">*&nbsp;&nbsp;</span></label>
+                </div>
+                <input class="btn --model-1 --reset mr30" type="reset" value="reset" name="btn-reset" id="btn-reset">
+                <input class="btn --model-1 --submit" type="submit" value="submit" name="btn-submit" id="btn-submit">
+            </form>
+        </section>
+        <!--FOOTER-->
+        <footer id="footer" class="footer not-container all-hidden--on">
+            <nav class="index-1 nav-bar --model-1 --color-1">
+                <a class="nav-bar_link --model-1 --color-1" href="https://www.instagram.com/davillenah"
+                    target="_blank"><span>&#60;&nbsp;&nbsp;</span><i
+                        class="fab fa-instagram"></i><span>&nbsp;&#47;&#62;</span></a>
+                <a class="nav-bar_link --model-1 --color-1" href="https://www.facebook.com/davillenah"
+                    target="_blank"><span>&#60;&nbsp;&nbsp;</span><i
+                        class="fab fa-facebook-f"></i><span>&nbsp;&#47;&#62;</span></a>
+                <a class="nav-bar_link --model-1 --color-1" id="profile-link" href="https://www.github.com/davillenah"
+                    target="_blank"><span>&#60;&nbsp;&nbsp;</span><i
+                        class="fab fa-github"></i><span>&nbsp;&#47;&#62;</span></a>
+                <a class="nav-bar_link --model-1 --color-1" href="https://www.linkedin.com/in/davillenah"
+                    target="_blank"><span>&#60;&nbsp;&nbsp;</span><i
+                        class="fab fa-linkedin-in"></i><span>&nbsp;&#47;&#62;</span></a>
+                <a class="nav-bar_link --model-1 --color-1" href="https://www.twitter.com/davillenah"
+                    target="_blank"><span>&#60;&nbsp;&nbsp;</span><i
+                        class="fab fa-twitter"></i><span>&nbsp;&#47;&#62;</span></a>
+            </nav>
+        </footer>
+    </div>
+</body>
 
-    <section id="about" class="about">
-    </section>
-
-    <section id="projects" class="project">
-    </section>
-
-    <section id="contact" class="contact">
-    </section>
-
-    <footer id="footer" class="footer">
-      <nav class="nav-bar --is-full-page --model-1">
-        <a class="nav-bar_link --model-1" href="https://www.instagram.com/davillenah" target="_blank">
-          <span>&#60;&nbsp;&nbsp;</span>
-          <i class="fab fa-instagram"></i>
-          <span>&nbsp;&#47;&#62;</span>
-        </a>
-        <a class="nav-bar_link --model-1" href="https://www.facebook.com/davillenah" target="_blank">
-          <span>&#60;&nbsp;&nbsp;</span>
-          <i class="fab fa-facebook-f"></i>
-          <span>&nbsp;&#47;&#62;</span>
-        </a>
-        <a id="profile-link" class="nav-bar_link --model-1" href="https://www.github.com/davillenah" target="_blank">
-          <span>&#60;&nbsp;&nbsp;</span>
-          <i class="fab fa-github"></i>
-          <span>&nbsp;&#47;&#62;</span>
-        </a>
-        <a class="nav-bar_link --model-1" href="https://www.linkedin.com/in/davillenah" target="_blank">
-          <span>&#60;&nbsp;&nbsp;</span>
-          <i class="fab fa-linkedin-in"></i>
-          <span>&nbsp;&#47;&#62;</span>
-        </a>
-        <a class="nav-bar_link --model-1" href="https://www.twitter.com/davillenah" target="_blank">
-          <span>&#60;&nbsp;&nbsp;</span>
-          <i class="fab fa-twitter"></i>
-          <span>&nbsp;&#47;&#62;</span>
-        </a>
-      </nav>
-    </footer>
-  </body> 
 </html>
