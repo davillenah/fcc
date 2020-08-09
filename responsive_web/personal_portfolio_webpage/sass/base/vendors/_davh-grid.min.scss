@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
 }
-.col,
+.column,
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30,13 +30,13 @@
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
-.col {
+.column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
 }
-[class*="col reverse"] {
+[class*="column reverse"] {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -44,42 +44,42 @@
 }
 @media (min-width: 600px) {
     .container {
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-    .not-container {
-        margin-right: -10rem;
-        margin-left: -10rem;
+    .out-container {
+        margin-right: -1rem;
+        margin-left: -1rem;
     }
 }
 @media (min-width: 900px) {
     .container {
-        padding-left: 20rem;
-        padding-right: 20rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-    .not-container {
-        margin-right: -20rem;
-        margin-left: -20rem;
+    .out-container {
+        margin-right: -2rem;
+        margin-left: -2rem;
     }
 }
 @media (min-width: 1200px) {
     .container {
-        padding-left: 30rem;
-        padding-right: 30rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
-    .not-container {
-        margin-right: -30rem;
-        margin-left: -30rem;
+    .out-container {
+        margin-right: -3rem;
+        margin-left: -3rem;
     }
 }
 @media (min-width: 1800px) {
     .container {
-        padding-left: 40rem;
-        padding-right: 40rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
-    .not-container {
-        margin-right: -40rem;
-        margin-left: -40rem;
+    .out-container {
+        margin-right: -4rem;
+        margin-left: -4rem;
     }
 }
 [class^="col-"] {
@@ -807,114 +807,120 @@
 .all-text--right {
     text-align: right;
 }
-.all-x-axis--left {
+.row.all-x-axis--left {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
-.all-x-axis--center {
+.row.all-x-axis--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
-.all-x-axis--right {
+.row.all-x-axis--right {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
-.all-x-axis--between {
+.row.all-x-axis--between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.all-x-axis--around {
+.row.all-x-axis--around {
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
-.all-y-axis-content--top {
+.row.all-y-axis-content--top {
     -ms-flex-line-pack: start;
     align-content: flex-start;
 }
-.all-y-axis-content--middle {
+.row.all-y-axis-content--middle {
     -ms-flex-line-pack: center;
     align-content: center;
 }
-.all-y-axis-content--bottom {
+.row.all-y-axis-content--bottom {
     -ms-flex-line-pack: end;
     align-content: flex-end;
 }
-.all-y-axis-content--between {
+.row.row.all-y-axis-content--between {
     -ms-flex-line-pack: justify;
     align-content: space-between;
 }
-.all-y-axis-content--around {
+.row.all-y-axis-content--around {
     -ms-flex-line-pack: distribute;
     align-content: space-around;
 }
-.all-y-axis-content--evenly {
+.row.all-y-axis-content--evenly {
     -ms-flex-line-pack: space-evenly;
     align-content: space-evenly;
 }
-.all-y-axis-items--top {
+.row.all-y-axis-items--top {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
-.all-y-axis-items--middle {
+.row.all-y-axis-items--middle {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
-.all-y-axis-items--bottom {
+.row.all-y-axis-items--bottom {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
 }
-.all-y-axis-items--between {
+.row.all-y-axis-items--between {
     -webkit-box-align: space-between;
     -ms-flex-align: space-between;
     align-items: space-between;
 }
-.all-y-axis-items--around {
+.row.all-y-axis-items--around {
     -webkit-box-align: space-around;
     -ms-flex-align: space-around;
     align-items: space-around;
 }
-.all-y-axis-items--evenly {
+.row.all-y-axis-items--evenly {
     -webkit-box-align: space-evenly;
     -ms-flex-align: space-evenly;
     align-items: space-evenly;
 }
-.all-y-axis-self--top {
+.row.all-y-axis-self--top {
     -ms-flex-item-align: start;
     align-self: flex-start;
 }
-.all-y-axis-self--middle {
+.row.all-y-axis-self--middle {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
 }
-.all-y-axis-self--bottom {
+.row.all-y-axis-self--bottom {
     -ms-flex-item-align: end;
     align-self: flex-end;
 }
-.all-y-axis-self--between {
+.row.all-y-axis-self--between {
     -ms-flex-item-align: space-between;
     -ms-grid-row-align: space-between;
     align-self: space-between;
 }
-.all-y-axis-self--around {
+.row.all-y-axis-self--around {
     -ms-flex-item-align: space-around;
     -ms-grid-row-align: space-around;
     align-self: space-around;
 }
-.all-y-axis-self--evenly {
+.row.all-y-axis-self--evenly {
     -ms-flex-item-align: space-evenly;
     -ms-grid-row-align: space-evenly;
     align-self: space-evenly;
 }
+.column.all-x-axis--center {
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.column.all-y-axis-content--evenly {
+    justify-content: space-evenly;
+}
+
 .all-hidden--on {
     display: none;
 }
@@ -953,8 +959,6 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .xs-x-axis--right {
         -webkit-box-pack: end;
@@ -1091,8 +1095,6 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .sm-x-axis--right {
         -webkit-box-pack: end;
@@ -1229,8 +1231,6 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .md-x-axis--right {
         -webkit-box-pack: end;
@@ -1367,8 +1367,6 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .lg-x-axis--right {
         -webkit-box-pack: end;
@@ -1505,8 +1503,6 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .xl-x-axis--right {
         -webkit-box-pack: end;

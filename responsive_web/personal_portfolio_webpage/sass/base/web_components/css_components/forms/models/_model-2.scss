@@ -1,0 +1,74 @@
+@mixin model-2 {
+    .contact {
+        margin-bottom: 20em;
+        font-weight: 700;
+        & > * {
+            padding: 2em;
+        }
+        &--left-side {
+            border-left: 0.4375em solid #1c9cd9;
+            border-bottom: 0.4375em solid #fff;
+            border-top-left-radius: 3.125em;
+            background-color: #fff;
+            & img {
+                width: 50%;
+            }
+        }
+        &--right-side {
+            border-right: 0.4375em solid #1c9cd9;
+            border-top-right-radius: 3.125em;
+            border-bottom-right-radius: 3.125em;
+            background-color: rgba(#165d95, 1);
+            box-shadow: -0.3125em 0 0.125em 0.1875em #165d95;
+        }
+        &__form {
+            width: 37.5em;
+        }
+        &__item {
+            position: relative;
+            height: 4em;
+            margin-top: 1em;
+            &:last-of-type {
+                margin-bottom: 2em;
+                height: 6.25em;
+                & textarea {
+                    resize: none;
+                }
+            }
+        }
+        &__label {
+            position: absolute;
+            z-index: 2;
+            top: 1.875em;
+            left: -0.1875em;
+            width: 100%;
+            font-family: $font-primary;
+            font-size: 1.1em;
+            color: #fff;
+            transition: all 0.8s;
+            & span {
+                position: absolute;
+            }
+        }
+        &__input {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            padding: 0.3125em;
+            border: none;
+            border-bottom: 0.125em solid #fff;
+            border-bottom-right-radius: 70%;
+            color: rgba(#fff, 0.8);
+            background-color: inherit;
+            &::placeholder {
+                color: transparent;
+            }
+            &:not(:placeholder-shown) + .contact__label,
+            &:hover + .contact__label,
+            &:focus + .contact__label {
+                transform: translateY(-2.2em);
+            }
+        }
+    }
+}

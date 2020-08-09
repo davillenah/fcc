@@ -4,7 +4,8 @@
 $pallete-dark: #011627;
 $pallete-light: #fdfffc;
 $pallete-primary: #165d95;
-$pallete-secondary: #e71d36;
+//$pallete-secondary: #e71d36;
+$pallete-secondary: #e75768;
 $pallete-tertiary: #1c9cd9;
 $pallete-fourth: #fdab38;
 $pallete-fifth: #34e9d7;
@@ -35,4 +36,7 @@ $pallete-fifth: #34e9d7;
 }
 .color--red {
     color: red;
+}
+.color--silver {
+    color: rgb(157, 157, 157);
 }

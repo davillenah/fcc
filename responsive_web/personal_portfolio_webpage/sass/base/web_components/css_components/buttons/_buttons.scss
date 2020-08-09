@@ -1,0 +1,25 @@
+@import "models/model-1";
+
+[class*="btn"] {
+    height: 2.5rem;
+    width: 6.25rem;
+    border-style: solid;
+    border-width: 0.125rem;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all 0.25s;
+    @media (max-width: 900px) {
+        height: 1.9rem;
+        width: 5rem;
+        font-size: 0.93em;
+    }
+    @media (max-width: 599px) {
+        height: 1.7rem;
+        width: 4rem;
+        font-size: 0.85em;
+    }
+}
+
+@include submit-model-1;
+@include reset-model-1;
+@include burger-model-1;

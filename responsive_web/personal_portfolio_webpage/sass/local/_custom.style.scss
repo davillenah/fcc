@@ -3,41 +3,64 @@
 }
 .about-box {
     position: relative;
-    top: calc(50vh - 200rem);
-    left: calc(50% - 150rem);
-    height: 400rem;
-    width: 300rem;
+    height: 27rem;
+    width: 18.75rem;
 }
-.about-box > .img {
+.about-box__img {
     position: absolute;
-    top: 5%;
+    top: 0;
     left: calc(25%);
     display: block;
-    height: 37%;
+    height: 35%;
     width: 49.33%;
-    border: 2rem solid white;
+    border: 0.125rem solid white;
     border-radius: 50%;
 }
-.about-box > .title {
+.about-box__title {
     position: absolute;
-    top: 42%;
+    top: 36%;
     left: 0;
     display: block;
     width: 100%;
-    font-size: 1.4em;
-    line-height: 50rem;
+    font-size: 2em;
+    line-height: 3.125rem;
     text-align: center;
+    color: $pallete-secondary;
+    text-shadow: 0.1rem 0.1rem 0.15rem $pallete-dark;
 }
-.about-box > .description {
+.about-box__description {
     box-sizing: border-box;
     position: absolute;
-    top: 54.5%;
+    top: 45%;
     left: 0;
     display: block;
     padding: 1em;
     height: 45.5%;
     width: 100%;
     font-style: 1.5em;
+    font-weight: 700;
     line-height: 1.5;
     text-align: justify;
+}
+.project-tile {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.15rem $pallete-dark;
+}
+.designby {
+    color: silver;
+}
+#footer {
+    border-bottom: 0.5rem solid $pallete-secondary;
+}
+.boxing {
+    top: 100vh;
+}
+.box {
+    background-color: black;
+    height: 1em;
+    margin-left: 1em;
+    &:last-of-type {
+        margin-right: 1em;
+    }
 }

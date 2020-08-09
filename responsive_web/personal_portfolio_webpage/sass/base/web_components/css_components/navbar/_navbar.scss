@@ -19,7 +19,7 @@
     }
     &__item {
         line-height: 4rem;
-        text-shadow: 0.1em 0.1em 0.08em rgb(15, 15, 15);
+        text-shadow: 0.05em 0.05em 0.08em rgb(15, 15, 15);
         @media (max-width: 599px) {
             line-height: 1;
             padding-top: 1rem;
@@ -42,9 +42,9 @@
             color: $pallete-secondary;
         }
         &:hover,
-        &:focus,
         &:active {
             color: $pallete-tertiary;
+            text-shadow: -0.08em 0.08em 0.08em rgb(15, 15, 15);
             & span {
                 visibility: visible;
             }

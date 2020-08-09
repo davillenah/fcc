@@ -7,9 +7,62 @@
     height: 20em;
     width: 20em;
     border-radius: 1em;
-    font-size: 0.75em;
+    font-size: 0.8em;
     color: #fff;
-    text-shadow: 1.5rem 1.5rem 1rem rgba(0, 0, 0, 0.8);
+    text-shadow: 1.5em 1.5em 1em rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 0.5em 0.1em white;
 }
-@include model-1;
+[class*="card --model-1"] {
+    height: 25em;
+    &:hover {
+        box-shadow: -3.5em 3.5em 0.5em 0.1em rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        & > .card__header {
+            height: 15em;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        & h4 {
+            margin-bottom: 12em;
+        }
+    }
+    &:not(:hover) h4 {
+        transition: all 0.75s;
+        margin-bottom: 0;
+    }
+}
+.card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25em;
+    width: 20em;
+    border-radius: 1em;
+}
+.card__header {
+    position: absolute;
+    z-index: 1;
+    bottom: 0em;
+    height: 5em;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.1em $pallete-dark;
+    color: $pallete-light;
+    transition: all 0.75s;
+    & * {
+        transition: all 3s;
+    }
+
+    & h3 {
+        color: $pallete-fifth;
+    }
+    & h4,
+    & p {
+        font-size: 80%;
+    }
+    & p {
+        margin-top: 1em;
+    }
+}

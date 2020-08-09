@@ -10,3 +10,6 @@ $font-secondary: "Anonymous Pro", monospace;
 .font--secondary {
     font-family: $font-secondary;
 }
+.font--primary-important {
+    font-family: $font-primary !important;
+}

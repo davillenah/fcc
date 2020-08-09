@@ -1,0 +1,78 @@
+@mixin model-1 {
+    .contact {
+        margin-bottom: 20em;
+        font-size: 0.8em;
+        & > * {
+            padding: 2em;
+        }
+        &--left-side {
+            border-left: 7rem solid #b81f31;
+            border-bottom: 7rem solid $pallete-light;
+            border-top-left-radius: 50rem;
+            background-color: $pallete-light;
+            & img {
+                width: 50%;
+            }
+        }
+        &--right-side {
+            border-right: 7rem solid $pallete-dark;
+            border-top-right-radius: 50rem;
+            border-bottom-right-radius: 50rem;
+            background-image: linear-gradient(
+                to left,
+                #b81f31 25%,
+                $pallete-light 75%
+            );
+        }
+        //  @include model-1;
+        &__form {
+            width: 600rem;
+        }
+        &__item {
+            position: relative;
+            height: 4em;
+            margin-top: 1em;
+            &:last-of-type {
+                margin-bottom: 2em;
+                height: 100rem;
+                & textarea {
+                    resize: none;
+                }
+            }
+        }
+        &__label {
+            position: absolute;
+            z-index: 2;
+            top: 30rem;
+            left: -3rem;
+            width: 100%;
+            font-weight: 500;
+            color: black;
+            transition: all 0.8s;
+            & span {
+                position: absolute;
+            }
+        }
+        &__input {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            padding: 5rem;
+            border: none;
+            border-bottom: 2rem solid $pallete-light;
+            border-bottom-right-radius: 70%;
+            font-size: 1.2em;
+            color: $pallete-dark;
+            background-color: inherit;
+            &::placeholder {
+                color: transparent;
+            }
+            &:not(:placeholder-shown) + .contact__label,
+            &:hover + .contact__label,
+            &:focus + .contact__label {
+                transform: translateY(-2.2em);
+            }
+        }
+    }
+}
